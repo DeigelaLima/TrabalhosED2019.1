@@ -24,4 +24,36 @@
     * Tive dificuldade nas ordens dos acontecimentos que cada função iria fazer.
 * Quanto tempo levou para fazer uma atividade<p>
     * Gastei quatro horas.
-
+## 03 - Labirinto
+* O que você fez<p>
+    * bla bla
+* com quem e como você fez<p>
+    * bla bla
+* O que aprendeu e sabe fazer<p>
+    * bla bla
+* O que tem difilculdade ainda<p>
+    * bla bla
+* Quanto tempo levou para fazer um atividade<p>
+    * bla bla
+## 04 - Árvore
+* O que você fez<p>
+    * bla bla
+* com quem e como você fez<p>
+    * bla bla
+* O que aprendeu e sabe fazer<p>
+    * bla bla
+* O que tem difilculdade ainda<p>
+    * bla bla
+* Quanto tempo levou para fazer um atividade<p>
+    * bla bla
+## 05 - Fractais
+* O que você fez<p>
+    * bla bla
+* com quem e como você fez<p>
+    * bla bla
+* O que aprendeu e sabe fazer<p>
+    * bla bla
+* O que tem difilculdade ainda<p>
+    * bla bla
+* Quanto tempo levou para fazer um atividade<p>
+    * bla bla
