@@ -26,15 +26,15 @@
     * Gastei quatro horas.
 ## 03 - Labirinto
 * O que você fez<p>
-    * bla bla
+    * Fiz o código completo.
 * com quem e como você fez<p>
-    * bla bla
+    * Fiz sozinha, assisti a vídeo aula do senhor e refiz o código fazendo alguma alterações e procurando entender a lógica. Fiz a função procarar_saida, mas estava dando erro, então pedi ajuda para alguns colegas e ao monitor.
 * O que aprendeu e sabe fazer<p>
-    * bla bla
+    * Aprendi passar parâmentro por via argumento na MAIN e utilizar o DEFiNE. Entendo a lógica do código, porém se eu for fazer ainda tenha dificuldade em algumas partes.
 * O que tem difilculdade ainda<p>
-    * bla bla
+    * A dificuldade que tive foi transformar o pseudocódigo da função procurar_saida, mas consegui fazer uma boa parte sozinha. A dificuldade que ainda tenho é de tranformar o pseudocódigo no código.
 * Quanto tempo levou para fazer um atividade<p>
-    * bla bla
+    * Levei dois dias. No primeiro dia gastei 5 horas, no sengudo dia levei mais 5 horas.
 ## 04 - Árvore
 * O que você fez<p>
     * bla bla
