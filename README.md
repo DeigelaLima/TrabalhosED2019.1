@@ -28,9 +28,9 @@
 * O que você fez<p>
     * Fiz o código completo.
 * com quem e como você fez<p>
-    * Fiz sozinha, assisti a vídeo aula do senhor, refiz o código,fiz algumas alterações e procurei entender a lógica. Fiz a função procarar_saida, mas estava dando erro, então pedi ajuda para alguns colegas e ao monitor.
+    * Fiz sozinha, assisti a vídeo aula do senhor, refiz o código fazendo algumas alterações e procurei entender a lógica. Fiz a função procarar_saida, mas estava dando erro, então pedi ajuda para alguns colegas e ao monitor.
 * O que aprendeu e sabe fazer<p>
-    * Aprendi passar parâmentro por via argumento na MAIN e utilizar o DEFiNE. Entendo a lógica do código, porém se eu for fazer ainda tenha dificuldade em algumas partes.
+    * Aprendi passar parâmentro por via argumento na MAIN e utilizar o DEFINE. Entendo a lógica do código, porém se for fazer ainda tenha dificuldade em algumas partes.
 * O que tem difilculdade ainda<p>
     * A dificuldade que tive foi transformar o pseudocódigo da função procurar_saida, mas consegui fazer uma boa parte sozinha. A dificuldade que ainda tenho é de tranformar o pseudocódigo no código.
 * Quanto tempo levou para fazer um atividade<p>
