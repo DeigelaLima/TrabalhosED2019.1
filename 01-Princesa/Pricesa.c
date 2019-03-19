@@ -44,7 +44,7 @@ int achar_vivo_esquerda(int vet[], int size, int inicio){
 		}
 		pos = (pos - 1);//enquanto nao encontrar vivo fazer isso
     }
-    return pos;
+    return pos;//
 }
 void mostrarVetor(int vetor[], int tamanho, int escolhido){
   printf("[");

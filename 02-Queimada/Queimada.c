@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int const TREE = '#';//Arvore
-int const FIRE = 'o';//Fogo
-int const EMPTY = '.';//Vazio
+int const TREE = '#';//arvore
+int const FIRE = 'o';//fogo
+int const EMPTY = '.';//vazio
 
 void mostrar_matriz(int nl, int nc, char mat[nl][nc]){
 	int l = 0;
