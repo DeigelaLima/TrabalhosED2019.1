@@ -102,11 +102,7 @@ int main(int argc, char * argv[]){// pega o tamanho da matriz via ARGUMENTO
 	int nl = 0;
 	int nc = 0;
 	
-	//ATOI -> Transforma String para Inteiro
-	if(argc > 2){
-		nl = atoi(argv[1]);
-		nc = atoi(argv[2]); 
-	}
+	printf("Digite o tamanho da matriz: ");
 	scanf("%d %d", &nl, &nc);
 	char matriz[nl][nc];
 	char matriz_visitados[nl][nc];
@@ -117,6 +113,21 @@ int main(int argc, char * argv[]){// pega o tamanho da matriz via ARGUMENTO
 	
 	furar_lab(nl, nc, matriz, 1 ,1);
 	printf("%d %d\n", nl, nc);
-	procurar_saida(nl, nc, matriz, 1, 1, matriz_visitados, nl - 2, nc -3);
 	mostrar_matriz(nl, nc, matriz);
+	int l_inicio = 0;
+	int c_inicio = 0;
+	printf("Digite o inicio das coordenadas do labirinto: ");
+	scanf("%d %d",&l_inicio, &c_inicio);
+	int l_fim = 0;
+	int c_fim = 0;
+	printf("Digite o fim das coordenadas do labirintos: ");
+	scanf("%d %d", &l_fim, &c_fim);
+	while(procurar_saida(nl, nc, matriz, l_inicio, c_inicio, matriz_visitados, l_fim, c_fim)){
+		printf("Digite o fim das coordenadas do labirintos: ");
+		scanf("%d %d", &l_fim, &c_fim);
+	}
+	procurar_saida(nl, nc, matriz, l_inicio, c_inicio, matriz_visitados, l_fim, c_fim);
+	mostrar_matriz(nl, nc, matriz);
+	
+	return 0;
 }
