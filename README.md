@@ -35,7 +35,19 @@
     * A dificuldade que tive foi transformar o pseudocódigo da função procurar_saida, mas consegui fazer uma boa parte sozinha. A dificuldade que ainda tenho é de tranformar o pseudocódigo no código.
 * Quanto tempo levou para fazer um atividade<p>
     * Levei dois dias. No primeiro dia gastei 5 horas, no sengudo dia levei mais 5 horas.
-## 04 - Árvore
+
+## 05 - Arvore
+* O que você fez<p>
+    * Fiz código completo. 
+* com quem e como você fez<p>
+    * Comecei fazendo sozinha, assistindo a video aula do senhor e procurando entender, consegui fazer  código, mas não tava editando o arquivo .png, então pedi ajuda alguns colegas nessa parte e na parte de acresentar três cores diferentes na arvore. 
+* O que aprendeu e sabe fazer<p>
+    * Aprendi um pouco a utilizar angulos e entendo como funciona as bibliotecas inseridas no código.
+* O que tem difilculdade ainda<p>
+    * Ainda tenho dificuldade em manipular os angulos.
+* Quanto tempo levou para fazer um atividade<p>
+    * Levei dois dias, no primeiro dia gastei umas duas horas, no segundo gastei uma hora.
+## 05 - Circulo
 * O que você fez<p>
     * bla bla
 * com quem e como você fez<p>
@@ -46,7 +58,19 @@
     * bla bla
 * Quanto tempo levou para fazer um atividade<p>
     * bla bla
-## 05 - Fractais
+## 05.1 - Gelo
+* O que você fez<p>
+    * bla bla
+* com quem e como você fez<p>
+    * bla bla
+* O que aprendeu e sabe fazer<p>
+    * bla bla
+* O que tem difilculdade ainda<p>
+    * bla bla
+* Quanto tempo levou para fazer um atividade<p>
+    * bla bla
+
+## 05.3 - Trigo
 * O que você fez<p>
     * bla bla
 * com quem e como você fez<p>
