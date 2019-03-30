@@ -8,11 +8,11 @@ Autor:
 Principais fontes:
     png: https://lodev.org/lodepng
     tff: https://github.com/nothings/stb
-    funções de desenho e matemáticas estão comentadas nas funções 
+    funï¿½ï¿½es de desenho e matemï¿½ticas estï¿½o comentadas nas funï¿½ï¿½es 
 
-Licença: GPLv3
+Licenï¿½a: GPLv3
 
-Versão: 0.1
+Versï¿½o: 0.1
 */
 
 /*
@@ -52,27 +52,27 @@ extern XColor BLACK;
 ###############################################
 */
 
-/* abre um bitmap com essas dimensões */
+/* abre um bitmap com essas dimensï¿½es */
 void x_open(int width, int height);
 
 /* finaliza o bitmap liberando os recursos */
 void x_close();
 
 /* para salvar um png no arquivo
-   não inclua a extensão .png no nome do arquivo
+   nï¿½o inclua a extensï¿½o .png no nome do arquivo
 */
 void x_save(const char* filename);
 
-/* cada vez que a funcao é chamada, salva um arquivo com prefixo numérico
-   incremental. Ex: se você chamar x_log("teste") 4 vezes vai salvar os
+/* cada vez que a funcao ï¿½ chamada, salva um arquivo com prefixo numï¿½rico
+   incremental. Ex: se vocï¿½ chamar x_log("teste") 4 vezes vai salvar os
    seguintes arquivos:
    00000_teste.png 00001_teste.png 00002_teste.png 00003_teste.png
    retorna o indice atual do arquivo que foi salvo.
 */
 int x_log(const char* filename);
 
-/*  salva o arquivo, mas permite ao usuário controlar
-    os estados salvos intermediários através da interação com o terminal.
+/*  salva o arquivo, mas permite ao usuï¿½rio controlar
+    os estados salvos intermediï¿½rios atravï¿½s da interaï¿½ï¿½o com o terminal.
 */
 void x_step(const char * filename);
 
@@ -85,8 +85,8 @@ void x_step(const char * filename);
 /* a funcao plot pinta o pixel usando a cor */
 void x_plot(int x, int y);
 
-/* a funcao write escreve um texto text, na posição px, py.
-   retorna o x da posição após o último caractere escrito.
+/* a funcao write escreve um texto text, na posiï¿½ï¿½o px, py.
+   retorna o x da posiï¿½ï¿½o apï¿½s o ï¿½ltimo caractere escrito.
 */
 int x_write(int x, int y, const char * format, ...);
 
@@ -95,7 +95,7 @@ void x_clear(XColor color);
 
 /*
 ###############################################
-### FUNÇÕES SET: Cor, Fonte, Paleta de Cores ##
+### FUNï¿½ï¿½ES SET: Cor, Fonte, Paleta de Cores ##
 ###############################################
 */
 
@@ -113,7 +113,7 @@ void xs_font(const char* filename);
 
 /*
 ###############################################
-############## FUNÇÕES GET ####################
+############## FUNï¿½ï¿½ES GET ####################
 ###############################################
 */
 
@@ -128,14 +128,14 @@ XColor xg_color();
 XColor xg_pixel(int x, int y);
 
 /* retorna uma cor dado um char. 
-   os char default da paleta são rgbmcybk
+   os char default da paleta sï¿½o rgbmcybk
    outros podem ser definidos ou redefinidor com xs_palette
 */
 XColor xg_palette(char c);
 
 
 /* ############################################### */
-/* ############ FUNÇÕES DE DESENHO DE LINHAS ##### */
+/* ############ FUNï¿½ï¿½ES DE DESENHO DE LINHAS ##### */
 /* ############################################### */
 
 
@@ -160,13 +160,13 @@ void xd_bezier(int x0, int y0, int x1, int y1, int x2, int y2);
 
 
 /* ############################################### */
-/* ### FUNÇÕES DE DESENHO FORMAS PREENCHIDAS ##### */
+/* ### FUNï¿½ï¿½ES DE DESENHO FORMAS PREENCHIDAS ##### */
 /* ############################################### */
 
 /* desenha um arco dado o ponto de centro, raio, espessura */
 /* o angulo de inicio e o angulo de fim */
 /* o angulo de inicio deve ser sempre menor que o angulo de fim */
-/* o desenho é feito no sentido anti horario */
+/* o desenho ï¿½ feito no sentido anti horario */
 /* o angulo pode superar 360 */
 void xd_filled_arc(float centerx, float centery, int radius, int thickness, int degrees_begin, int degrees_end);
 
@@ -222,14 +222,14 @@ XY xy_ortho(XY v);
 
 /*
 ###############################################
-############ FUNÇÕES MATEMATICAS ##############
+############ FUNï¿½ï¿½ES MATEMATICAS ##############
 ###############################################
 */
 
 /*
-Essas funções foram adicionadas para que a biblioteca
-xpaint não dependesse de incluir a biblioteca math.h
-nos parametros de compilação com o -lm 
+Essas funï¿½ï¿½es foram adicionadas para que a biblioteca
+xpaint nï¿½o dependesse de incluir a biblioteca math.h
+nos parametros de compilaï¿½ï¿½o com o -lm 
 */
 
 float xm_sqrt(const float m);
@@ -247,8 +247,8 @@ int   xm_rand(int min, int max);
 ###################################################
 #         INICIO DA IMPLEMENTACAO                 #  
 #                                                 #
-#   O código abaixo apenas será inserido se       #
-#   você incluir o #define XFULL antes de incluir #
+#   O cï¿½digo abaixo apenas serï¿½ inserido se       #
+#   vocï¿½ incluir o #define XFULL antes de incluir #
 #   essa biblioteca.                              #
 ###################################################
 */
@@ -8324,7 +8324,7 @@ unsigned encode(const std::string& filename,
 #endif /* LODEPNG_COMPILE_PNG */
 } /* namespace lodepng */
 #endif /*LODEPNG_COMPILE_CPP*/
-/* inclusão David Sena */
+/* inclusï¿½o David Sena */
 #define STB_TRUETYPE_IMPLEMENTATION
 
 #define STBTT_RGB_MODE /* alteracao para escrever 3 cores */
@@ -16193,6 +16193,7 @@ void x_bitmap_destroy(XBitmap * bitmap){
 }
 
 void x_open(int width, int height){
+
     /* inicializando a cor de fundo */
     uchar cinza[] = {30, 30, 30};
     __bitmap = x_bitmap_create(width, height, cinza);
@@ -16264,7 +16265,7 @@ uchar * x_buffer_create(const char* filename){
     uchar * font_buffer;
     FILE* font_file = fopen(filename, "rb");
     if(font_file == NULL){
-        puts("arquivo não encontrado");
+        puts("arquivo nï¿½o encontrado");
         exit(1);
     }
     fseek(font_file, 0, SEEK_END);
@@ -17341,4 +17342,4 @@ float xm_fabs(float f){
     return f < 0 ? -f : f;
 }
 #endif /* H_ONLY */
-#undef H_ONLY /* Para evitar a propagação da Flag ela deve ser apagada */
+#undef H_ONLY /* Para evitar a propagaï¿½ï¿½o da Flag ela deve ser apagada */
