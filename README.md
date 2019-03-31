@@ -47,6 +47,7 @@
     * Ainda tenho dificuldade em manipular os angulos.
 * Quanto tempo levou para fazer um atividade<p>
     * Levei dois dias, no primeiro dia gastei umas duas horas, no segundo gastei uma hora.
+    
 ## 05.1 - Circulo
 * O que você fez<p>
     * Fiz o código completo.
@@ -58,6 +59,7 @@
     * dificuldade de lidar com os angulos.
 * Quanto tempo levou para fazer um atividade<p>
     * três horas.
+
 ## 05.2 - Gelo
 * O que você fez<p>
     * Fiz o código completo.
