@@ -4,17 +4,18 @@ void trigo(int x, int y, int tamanho, int angulo){
     int aux = x;
     int auy = y;
 
+    xs_color((XColor){155,255,255});
     if(tamanho < 1){ 
         return;
     }
     for (int i = 0; i < 4; i++) {
-        int xf = x + tamanho * xm_cos(angulo);
-        int yf = y - tamanho * xm_sin(angulo);
+        int xf = aux + tamanho * xm_cos(angulo);
+        int yf = auy - tamanho * xm_sin(angulo);
         xd_thick_line(x, y, xf, yf, 3);
         trigo(xf, yf, tamanho / 3, (angulo + 45));
         trigo(xf, yf, tamanho / 3, (angulo - 45));
-        aux = x; //salva x
-        auy = y; //salva y
+        aux = xf; //salva x
+        auy = yf; //salva y
         x_step("trigo");
     }
 }

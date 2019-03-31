@@ -3,11 +3,10 @@
 
 void circulos(int x, int y, int tamRaio){
 
-     //xs_color((XColor){120,50,20});
+    xs_color((XColor){155,20,20});
     if(tamRaio < 1){
         return;
     }
-    
     int angulo = 0;
     for (int i = 0; i < 6; i++) {
         xd_circle(x, y, tamRaio);
@@ -18,7 +17,6 @@ void circulos(int x, int y, int tamRaio){
         circulos(xf, yf, tamRaio / 3);
         angulo = angulo + 60;
         x_step("circulos"); //salva o arquivo, mas permite ao usuario controlar
-
     }
 }
 int main(){
