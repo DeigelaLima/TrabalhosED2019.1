@@ -27,7 +27,7 @@
 ## 03 - Labirinto
 * O que você fez<p>
     * Fiz o código completo.
-* com quem e como você fez<p>
+* Com quem e como você fez<p>
     * Fiz sozinha, assisti a vídeo aula do senhor, refiz o código fazendo algumas alterações e procurei entender a lógica. Fiz a função procurar_saida, mas estava dando erro, então pedi ajuda para alguns colegas e ao monitor.
 * O que aprendeu e sabe fazer<p>
     * Aprendi passar parâmentro por via argumento na MAIN e utilizar o DEFINE. Entendo a lógica do código, porém se for fazer ainda tenha dificuldade em algumas partes.
@@ -39,7 +39,7 @@
 ## 05 - Arvore
 * O que você fez<p>
     * Fiz código completo. 
-* com quem e como você fez<p>
+* Com quem e como você fez<p>
     * Comecei fazendo sozinha, assistindo a video aula do senhor e procurando entender, consegui fazer  código, mas não tava editando o arquivo .png, então pedi ajuda alguns colegas nessa parte e na parte de acresentar três cores diferentes na arvore. 
 * O que aprendeu e sabe fazer<p>
     * Aprendi um pouco a utilizar angulos e entendo como funciona as bibliotecas inseridas no código.
@@ -47,37 +47,37 @@
     * Ainda tenho dificuldade em manipular os angulos.
 * Quanto tempo levou para fazer um atividade<p>
     * Levei dois dias, no primeiro dia gastei umas duas horas, no segundo gastei uma hora.
-## 05 - Circulo
+## 05.1 - Circulo
 * O que você fez<p>
-    * bla bla
-* com quem e como você fez<p>
-    * bla bla
+    * Fiz o código completo.
+* Com quem e como você fez<p>
+    * Fiz sozinha, primeiro procurei desenvolver o código, depois fiz uma pesquisa para poder concluir o código, observei que a lógica era práticamente a mesma coisa para todos os fractais, só teria que observar a parte da figura que se repetia mais e fazer uma condição exepecifica para a repetição. O código não tava desenhando o fractal por completo, então pedi ajuda para meu colega Renato. 
 * O que aprendeu e sabe fazer<p>
-    * bla bla
+    * Como os códigos são bem semelhante, aprendi como fazer a condição de parada e a utilizar as bibliotecas. Talves surja alguma dificuldade em alguma parte, mas desenrolo boa parte. 
 * O que tem difilculdade ainda<p>
-    * bla bla
+    * dificuldade de lidar com os angulos.
 * Quanto tempo levou para fazer um atividade<p>
-    * bla bla
-## 05.1 - Gelo
+    * três horas.
+## 05.2 - Gelo
 * O que você fez<p>
-    * bla bla
-* com quem e como você fez<p>
-    * bla bla
+    * Fiz o código completo.
+* Com quem e como você fez<p>
+    * Fiz sozinha, atraves dos outros códigos dos fractais identifiquei como seria a condição de parada e como iria ficar os angulos, e deu bom,só que ocorreu o mesmo problema do circulo não tava aparecendo a figura por completo, pedi ajuda para meu colega Renato. 
 * O que aprendeu e sabe fazer<p>
-    * bla bla
+    * Aprendi a utilizar as bibliotecas que estão no código, se for fazer do começo talvez tenha alguma diculdade, mas consigo fazer.
 * O que tem difilculdade ainda<p>
-    * bla bla
+    * A dificuldade de controlar os angulos ainda continua.
 * Quanto tempo levou para fazer um atividade<p>
-    * bla bla
+    * Quatro horas.
 
 ## 05.3 - Trigo
 * O que você fez<p>
-    * bla bla
-* com quem e como você fez<p>
-    * bla bla
+    * Fiz o código completo.
+* Com quem e como você fez<p>
+    * Incicialmente comecei sozinha, mas depois pedi ajuda alguns colegas. Foi o fractais mais dificil que fiz. Desenvolvi o inicio atravez dos outros fractais feito anteriomente, porém não consegui finalizar então pedi ajuda para alguns colegas.
 * O que aprendeu e sabe fazer<p>
-    * bla bla
+    * Aprendi utilizar as bibliotecas e entendi a lógica. Boa parte do código consigo desenvolver.
 * O que tem difilculdade ainda<p>
-    * bla bla
+    * Dificulade dos angulos e na parte da altura que tinha que fazer uma subtração e eu buguei muito nessa parte.
 * Quanto tempo levou para fazer um atividade<p>
-    * bla bla
+    * Levei dois dias: No primeiro duas horas. no segundo uma hora.
