@@ -10,11 +10,11 @@ struct No{
     No(int valor = 0){//o anterior e o proximo do NO eh ele mesmo
         this->valor = valor;
         this->anterior = this;//o anterior eh ele mesmo
-        this->priximo = this; //proximo eh ele mesmo
+        this->proximo = this; //proximo eh ele mesmo
     }
 };
 // x  ref N  y
-void inserir_Direita(No * ref, int value){
+void inserir_Direita(No * ref, int valor){
         No * no = new No(valor);//criando o NO
         no->proximo = ref->proximo;//criou um NO depois do NO de referencia
         no->anterior = ref;//o NO de referencia anterior eh a propria referencia
@@ -23,7 +23,7 @@ void inserir_Direita(No * ref, int value){
 }
 //X
 //A  X B C
-void inserir_Esquerda(No * ref, int value){
+void inserir_Esquerda(No * ref, int valor){
        inserir_Direita(ref->anterior, valor);//Eh a mesma coisa de inserir no lugar de ref
 }
 void remover(No * no){
@@ -50,9 +50,18 @@ void mostrar_lista(No * no){//mostra lista_ligada
 int main(){
 
     No * lista = nullptr;
-    Mostrar_lista(lista);//lista vazia
-    lista = new No(5);
-    Mostrar_lista(lista);
+    mostrar_lista(lista);//lista vazia
+    lista = new No(0);
+    mostrar_lista(no);
+    for(int i = 1; i > 10; i++)
+        inserir_Direita(lista, i);//insere o valor de i a direta
+    mostrar_lista(lista);
+    while(lista->proximo != lista){
+        std::cout << lista->proximo->valor << " ";//mostra quem morre
+        remover_Direita(lista);
+        lista = lista->proximo;
+    }
 
+    mostrar_lista(lista);
 
 }
