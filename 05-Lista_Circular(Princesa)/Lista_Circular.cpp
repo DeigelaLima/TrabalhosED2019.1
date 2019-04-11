@@ -38,17 +38,17 @@ void remover_Direita(No * no){
     remover(no->proximo);
 }
 void mostrar_lista(No * no, No * espada = nullptr){//mostra lista_ligada
-        std::cout << "[";
+        cout << "[";
         if(no != nullptr){//entra na condicao e imprime
             No * aux = no;//guarda um ponto do NO
             do{
-                std::cout << " " << aux->valor;
+                cout << " " << aux->valor;
                 if((espada != nullptr) && (aux == espada))
-                    std::cout << ">";
+                    cout << ">";
                 aux = aux->proximo;//vou para o proximo NO
             }while(aux != no);
         }
-        std::cout << " ]\n";
+        cout << " ]\n";
 }
 
 void mostrar_ordenado(No * no){//NO pode ser qualquer posicao da lista
@@ -64,20 +64,27 @@ void mostrar_ordenado(No * no){//NO pode ser qualquer posicao da lista
     mostrar_lista(menor, no);
 
 }
-int main(){
+int main(int argc, char * argv[]){
 
+    if(argc == 1){//so o nome do programa
+      cout << "Passe o tamanho por argumento:\n ";
+      exit(1);
+    }
     No * lista = nullptr;
     mostrar_lista(lista);//lista vazia
     lista = new No(0);
-    mostrar_lista(lista, lista);//mostra quem esta com a espada(proprio no)
-    for(int i = 1; i > 10; i++)
+    mostrar_lista(lista);//mostra quem esta com a espada(proprio no)
+    int tamanho = atoi(argv[1]);
+    //std::cin >> tamanho;
+
+    for(int i = 1; i > tamanho; i++)
         inserir_Direita(lista, i);//insere o valor de i a direta
-    mostrar_lista(lista);
+    //mostrar_lista(lista);
     while(lista->proximo != lista){
         //std::cout << lista->proximo->valor << " ";//mostra quem morre
         remover_Direita(lista);
         lista = lista->proximo;
-        mostrar_ordenado(lista);
+        //mostrar_ordenado(lista);
     }
     mostrar_lista(lista);
 
