@@ -36,7 +36,7 @@
 * Quanto tempo levou para fazer um atividade<p>
     * Levei dois dias. No primeiro dia gastei 5 horas, no sengudo dia levei mais 5 horas.
 
-## 05 - Arvore
+## 04 - Arvore
 * O que você fez<p>
     * Fiz código completo. 
 * Com quem e como você fez<p>
@@ -48,7 +48,7 @@
 * Quanto tempo levou para fazer uma atividade<p>
     * Levei dois dias, no primeiro dia gastei umas duas horas, no segundo gastei uma hora.
     
-## 05.1 - Circulo
+## 04.1 - Circulo
 * O que você fez<p>
     * Fiz o código completo.
 * Com quem e como você fez<p>
@@ -60,7 +60,7 @@
 * Quanto tempo levou para fazer um atividade<p>
     * três horas.
 
-## 05.2 - Gelo
+## 04.2 - Gelo
 * O que você fez<p>
     * Fiz o código completo.
 * Com quem e como você fez<p>
@@ -72,7 +72,7 @@
 * Quanto tempo levou para fazer um atividade<p>
     * Quatro horas.
 
-## 05.3 - Trigo
+## 04.3 - Trigo
 * O que você fez<p>
     * Fiz o código completo.
 * Com quem e como você fez<p>
@@ -83,7 +83,7 @@
     * Dificulade dos angulos e na parte da altura que tinha que fazer uma subtração e eu buguei muito nessa parte.
 * Quanto tempo levou para fazer um atividade<p>
     * Levei dois dias: No primeiro duas horas. no segundo uma hora.
-## 06 - Lista Circular (Princesa Versão 1)
+## 05 - Lista Circular (Princesa Versão 1)
 * O que você fez<p>
     * Fiz o código completo (Enviando com uma semana de atraso).
 * Com quem e como você fez<p>
@@ -95,7 +95,7 @@
 * Quanto tempo levou para fazer uma atividade<p>
     * Dois dias, no primeiro uma duas horas e no segundo 30 minutos.
 
-## 07 - Algoritmo de Ordenação (Bubble_sort, Insertion_sort, Selection_sort)
+## 06 - Algoritmo de Ordenação (Bubble_sort, Insertion_sort, Selection_sort)
 * O que você fez<p>
     * Fiz os códigos completos (Enviando com uma semana de atraso).
 * Com quem e como você fez<p>
