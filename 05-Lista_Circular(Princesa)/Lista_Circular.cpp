@@ -10,8 +10,9 @@ struct No{
     No * proximo;
     No(int valor){//o anterior e o proximo do NO eh ele mesmo
         this->valor = valor;
-        this->proximo = this; //proximo eh ele mesmo
         this->anterior = this;//o anterior eh ele mesmo
+        this->proximo = this; //proximo eh ele mesmo
+
     }
 };
 // x  ref N  y
@@ -28,8 +29,8 @@ void inserir_Esquerda(No * ref, int valor){
        inserir_Direita(ref->anterior, valor);//Eh a mesma coisa de inserir no lugar de ref
 }
 void remover(No * no){
-    no->proximo = no->anterior;
-    no->anterior = no->proximo;
+    no->proximo->anterior = no->anterior;
+    no->anterior->proximo = no->proximo;
 }
 void remover_Esquerda(No * no){
     remover(no->anterior);
@@ -57,9 +58,8 @@ void mostrar_ordenado(No * no){//NO pode ser qualquer posicao da lista
     No * menor = no;
     No * aux = no;
     do{//ando pela lista
-        if(aux->valor < menor->valor){
+        if(aux->valor < menor->valor)
             menor = aux;
-        }
         aux = aux->proximo;
     }while(aux != no);
     //depois q sai do loop imprimo o menor
@@ -75,11 +75,11 @@ int main(int argc, char * argv[]){
     No * lista = nullptr;
     mostrar_lista(lista);//lista vazia
     lista = new No(0);
-    mostrar_lista(lista);//mostra quem esta com a espada(proprio no)
+    //mostrar_lista(lista);//mostra quem esta com a espada(proprio no)
     int tamanho = atoi(argv[1]);
     //std::cin >> tamanho;
 
-    for(int i = 1; i > tamanho; i++)
+    for(int i = 1; i < tamanho; i++)
         inserir_Direita(lista, i);//insere o valor de i a direta
     //mostrar_lista(lista);
     while(lista->proximo != lista){
