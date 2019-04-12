@@ -40,12 +40,12 @@
 * O que você fez<p>
     * Fiz código completo. 
 * Com quem e como você fez<p>
-    * Comecei fazendo sozinha, assistindo a video aula do senhor e procurando entender, consegui fazer  código, mas não tava editando o arquivo .png, então pedi ajuda alguns colegas nessa parte e na parte de acresentar três cores diferentes na arvore. 
+    * Comecei fazendo sozinha, assistindo a video aula do senhor e procurando entender, consegui fazer o código, mas não tava editando o arquivo .png, então pedi ajuda alguns colegas nessa parte e na parte de acresentar três cores diferentes na arvore. 
 * O que aprendeu e sabe fazer<p>
-    * Aprendi um pouco a utilizar angulos e entendo como funciona as bibliotecas inseridas no código.
+    * Aprendi um pouco a utilizar angulos e entender como funciona as bibliotecas inseridas no código.
 * O que tem difilculdade ainda<p>
     * Ainda tenho dificuldade em manipular os angulos.
-* Quanto tempo levou para fazer um atividade<p>
+* Quanto tempo levou para fazer uma atividade<p>
     * Levei dois dias, no primeiro dia gastei umas duas horas, no segundo gastei uma hora.
     
 ## 05.1 - Circulo
@@ -83,3 +83,26 @@
     * Dificulade dos angulos e na parte da altura que tinha que fazer uma subtração e eu buguei muito nessa parte.
 * Quanto tempo levou para fazer um atividade<p>
     * Levei dois dias: No primeiro duas horas. no segundo uma hora.
+## 06 - Lista Circular (Princesa Versão 1)
+* O que você fez<p>
+    * Fiz o código completo (Enviando com uma semana de atraso).
+* Com quem e como você fez<p>
+    * Fiz sozinha, assisti a video aula do senhor e fui fazendo e tentando entender a lógica. Depois de ter finalizado todo o código, deu um problema na compilação, então pedi ajuda alguns colegas e aos monitores.
+* O que aprendeu e sabe fazer<p>
+    * Aprendi a utilizar lista circular, achei um pouco complexo,   porque na lista circular não tem cabeça nem rabo, demorei     um pouco para enterder a lógica. Entendo a lógica do código,  o problema é saber as ordens dos acontecimento e em seguida   desenvolve-los, mas sei fazer a maioria das funções.
+* O que tem dificuldade ainda<p>
+    A dificuldade que tive foi de compreender a lógica de uma lista sem cabeça e sem rabo.
+* Quanto tempo levou para fazer uma atividade<p>
+    * Dois dias, no primeiro uma duas horas e no segundo 30 minutos.
+
+## 07 - Algoritmo de Ordenação (Bubble_sort, Insertion_sort, Selection_sort)
+* O que você fez<p>
+    * Fiz os códigos completos (Enviando com uma semana de atraso).
+* Com quem e como você fez<p>
+    * Fiz sozinha, assisti os videos do senhor e fiz os códigos, o Insertion deu um erro, tentei resolver mais não consegui, então pedi ajuda para alguns colegas. 
+* O que aprendeu e sabe fazer<p>
+    * Entendo a lógica dos códigos, sei fazer a maioria das funções.
+* O que tem dificuldade ainda<p>
+    * Tive diviculdade na função Insertion_sort, mas especificamente no segundo laço. 
+* Quanto tempo levou para fazer uma atividade<p>
+    * Dois dias, no primeiro uma hora e meia, no segundo 30 minutos.  
