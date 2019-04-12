@@ -8,10 +8,10 @@ struct No{
     int valor;
     No * anterior;
     No * proximo;
-    No(int valor = 0){//o anterior e o proximo do NO eh ele mesmo
+    No(int valor){//o anterior e o proximo do NO eh ele mesmo
         this->valor = valor;
-        this->anterior = this;//o anterior eh ele mesmo
         this->proximo = this; //proximo eh ele mesmo
+        this->anterior = this;//o anterior eh ele mesmo
     }
 };
 // x  ref N  y
@@ -43,8 +43,9 @@ void mostrar_lista(No * no, No * espada = nullptr){//mostra lista_ligada
             No * aux = no;//guarda um ponto do NO
             do{
                 cout << " " << aux->valor;
-                if((espada != nullptr) && (aux == espada))
+                if((espada != nullptr) && (aux == espada)){
                     cout << ">";
+                }
                 aux = aux->proximo;//vou para o proximo NO
             }while(aux != no);
         }
@@ -56,8 +57,9 @@ void mostrar_ordenado(No * no){//NO pode ser qualquer posicao da lista
     No * menor = no;
     No * aux = no;
     do{//ando pela lista
-        if(aux->valor < menor->valor)
+        if(aux->valor < menor->valor){
             menor = aux;
+        }
         aux = aux->proximo;
     }while(aux != no);
     //depois q sai do loop imprimo o menor
@@ -68,7 +70,7 @@ int main(int argc, char * argv[]){
 
     if(argc == 1){//so o nome do programa
       cout << "Passe o tamanho por argumento:\n ";
-      exit(1);
+      //exit(1);
     }
     No * lista = nullptr;
     mostrar_lista(lista);//lista vazia
