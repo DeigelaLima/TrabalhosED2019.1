@@ -70,7 +70,7 @@ int main(int argc, char * argv[]){
 
     if(argc == 1){//so o nome do programa
       cout << "Passe o tamanho por argumento:\n ";
-      //exit(1);
+      exit(1);
     }
     No * lista = nullptr;
     mostrar_lista(lista);//lista vazia
@@ -86,7 +86,7 @@ int main(int argc, char * argv[]){
         //std::cout << lista->proximo->valor << " ";//mostra quem morre
         remover_Direita(lista);
         lista = lista->proximo;
-        //mostrar_ordenado(lista);
+        mostrar_ordenado(lista);
     }
     mostrar_lista(lista);
 
