@@ -106,3 +106,10 @@
     * Tive diviculdade na função Insertion_sort, mas especificamente no segundo laço. 
 * Quanto tempo levou para fazer uma atividade<p>
     * Dois dias, no primeiro uma hora e meia, no segundo 30 minutos.  
+## 07 - Floodfill
+* O que você fez<p>
+* Com quem e como você fez<p>
+* O que aprendeu e sabe fazer<p>
+* O que tem dificuldade ainda<p>
+* Quanto tempo levou para fazer uma atividade<p>
+
