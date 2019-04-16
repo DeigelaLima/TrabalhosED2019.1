@@ -1,9 +1,9 @@
 # include  " xpaint.h "
 # include  " xmat.h "
-# include  < vector >
-# include  < list >
-# include  < queue >
-# include  < iostream >
+//# include  < vector >
+//# include  < list >
+//# include  < queue >
+//# include  < iostream >
 usando  namespace  std ;
 
 struct  Pos {
