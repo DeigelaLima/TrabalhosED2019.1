@@ -49,6 +49,7 @@ void mostrar(vector<vector<int>>& mat_int, vector<string>& mat, queue<Pos> fila)
 }
 void floodfill(vector<vector<int>>& mat_int, vector<string>& mat, int l, int c, char cor_base, char cor_final){
     queue<Pos> fila;
+    queue<Pos> fila2;
     fila.push(Pos(l, c));
     mat[l][c] = cor_final;
     while(!fila.empty()){
@@ -76,13 +77,16 @@ int main(){
     }
     xmat_draw(mat);
     x_save("mat");
-    int l = 0, c = 0;
+    int linicio = 0; cinicio = 0;
+    int lfim = 0, cfim = 0;
     puts("Digite o ponto de inicio l e c");
+    scanf("%d %d", &l, &c);
+    puts("Digite o ponto do fim l e c");
     scanf("%d %d", &l, &c);
     getchar();//remove \n after numbers
 
 //    pintar(mat, l, c, mat[l][c], 'b');
-    floodfill(mat_int, mat, l, c, mat[l][c], 'b');
+    floodfill(mat_int, mat, linicio, cinicio, mat[l][c], 'b', lfim, cfim);
     xmat_draw(mat);
     x_save("mat");
     x_close();
