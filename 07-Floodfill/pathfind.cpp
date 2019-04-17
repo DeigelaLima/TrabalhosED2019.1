@@ -47,9 +47,11 @@ void mostrar(vector<vector<int>>& mat_int, vector<string>& mat, queue<Pos> fila)
     x_step("mat"); 
 
 }
-void floodfill(vector<vector<int>>& mat_int, vector<string>& mat, int l, int c, char cor_base, char cor_final){
+void floodfill(vector<vector<int>>& mat_int, vector<string>& mat, int l, int c, char cor_base, char cor_final, int lfinal, int cfinal){
     queue<Pos> fila;
     queue<Pos> fila2;
+    bool encontrou = false;
+    int i = 1;
     fila.push(Pos(l, c));
     mat[l][c] = cor_final;
     while(!fila.empty()){
@@ -58,17 +60,29 @@ void floodfill(vector<vector<int>>& mat_int, vector<string>& mat, int l, int c, 
         for(auto viz : get_neibs(ref.l, ref.c)){
             if(has_value(mat, viz.l, viz.c, cor_base)){
                 mat[viz.l][viz.c] = cor_final;
+		mat_int[viz.l][viz.c] = i;
                 fila.push(viz);
                 mostrar(mat_int, mat, fila);
             }
-        }
+            if(has_value(mat, viz.l, viz.c, cor_final) && viz.l == lfinal && viz.c == cfinal){
+	    	encontrou == true;
+		break;
+            }
+		
+       }
+
+	if(encontrou)
+        	break;
+	i++;
+
     }
+    
 }
 int main(){
     int nl = 20, nc = 20;
     xmat_init(nl, nc);
     vector<string> mat(nl, string(nc, 'g'));
-    vector<vector<int>> mat_int(nl, vector<int>(nc, -1));
+    vector<vector<int>> mat_int(nl, vector<int>(nc, 0));
     for(int l = 0; l < (int) mat.size(); l++){
         for(int c = 0; c < (int) mat[0].size(); c++){
             if(xm_rand(0, 100) < 30)
@@ -77,7 +91,7 @@ int main(){
     }
     xmat_draw(mat);
     x_save("mat");
-    int linicio = 0; cinicio = 0;
+    int linicio = 0, cinicio = 0;
     int lfim = 0, cfim = 0;
     puts("Digite o ponto de inicio l e c");
     scanf("%d %d", &linicio, &cinicio);
@@ -86,7 +100,7 @@ int main(){
     getchar();//remove \n after numbers
 
 //    pintar(mat, l, c, mat[l][c], 'b');
-    floodfill(mat_int, mat, linicio, cinicio, mat[l][c], 'b', lfim, cfim);
+    floodfill(mat_int, mat, linicio, cinicio, mat[linicio][cinicio], 'b', lfim, cfim);
     xmat_draw(mat);
     x_save("mat");
     x_close();
