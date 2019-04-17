@@ -80,9 +80,9 @@ int main(){
     int linicio = 0; cinicio = 0;
     int lfim = 0, cfim = 0;
     puts("Digite o ponto de inicio l e c");
-    scanf("%d %d", &l, &c);
+    scanf("%d %d", &linicio, &cinicio);
     puts("Digite o ponto do fim l e c");
-    scanf("%d %d", &l, &c);
+    scanf("%d %d", &lfim, &cfim);
     getchar();//remove \n after numbers
 
 //    pintar(mat, l, c, mat[l][c], 'b');
