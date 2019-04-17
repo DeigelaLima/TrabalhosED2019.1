@@ -45,7 +45,6 @@ void mostrar(vector<vector<int>>& mat_int, vector<string>& mat, queue<Pos> fila)
         }
     }
     x_step("mat"); 
-
 }
 void floodfill(vector<vector<int>>& mat_int, vector<string>& mat, int l, int c, char cor_base, char cor_final, int lfinal, int cfinal){
     queue<Pos> fila;
@@ -60,22 +59,22 @@ void floodfill(vector<vector<int>>& mat_int, vector<string>& mat, int l, int c, 
         for(auto viz : get_neibs(ref.l, ref.c)){
             if(has_value(mat, viz.l, viz.c, cor_base)){
                 mat[viz.l][viz.c] = cor_final;
-		mat_int[viz.l][viz.c] = i;
+		        mat_int[viz.l][viz.c] = i;
                 fila.push(viz);
                 mostrar(mat_int, mat, fila);
             }
             if(has_value(mat, viz.l, viz.c, cor_final) && viz.l == lfinal && viz.c == cfinal){
-	    	encontrou == true;
-		break;
+	    	    encontrou = true;
+		    break;
             }
 		
        }
 
 	if(encontrou)
         	break;
-	i++;
-
+    i++;
     }
+    
     
 }
 int main(){
