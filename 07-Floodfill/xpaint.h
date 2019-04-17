@@ -8,18 +8,18 @@ Autor:
 Principais fontes:
     png: https://lodev.org/lodepng
     tff: https://github.com/nothings/stb
-    funÃ§Ãµes de desenho e matemÃ¡ticas estÃ£o comentadas nas funÃ§Ãµes 
+    funções de desenho e matemáticas estão comentadas nas funções 
 
-LicenÃ§a: GPLv3
+Licença: GPLv3
 
-VersÃ£o: 0.5
+Versão: 0.4
 
 
 - 0.5 11/05/2019
-    - adaptaÃ§Ã£o feita para aceitar includes de cpp.
+    - adaptação feita para aceitar includes de cpp.
 - 0.4 26/04/2019
     - adicionas cores de background
-    - alterada a funÃ§Ã£o de xs_log(diretorio)
+    - alterada a função de xs_log(diretorio)
 
 */
 
@@ -75,20 +75,20 @@ extern XColor BLACK_B;
 ###############################################
 */
 
-/* abre um bitmap com essas dimensÃµes */
+/* abre um bitmap com essas dimensões */
 void x_open(unsigned int width, unsigned int height);
 
 /* finaliza o bitmap liberando os recursos */
 void x_close();
 
 /* para salvar um png no arquivo
-   nÃ£o inclua a extensÃ£o .png no nome do arquivo
+   não inclua a extensão .png no nome do arquivo
 */
 void x_save(const char *filename);
 
-/*  Define um diretÃ³rio onde serÃ£o salvos todas imagens invocadas no comando x_step.
+/*  Define um diretório onde serão salvos todas imagens invocadas no comando x_step.
 
-    Se directory for "", ele nÃ£o salvarÃ¡ os estados.
+    Se directory for "", ele não salvará os estados.
     Utilize o path completo incluindo a /
     Exemplo xs_log("imgs/")
 
@@ -101,8 +101,8 @@ void xs_log(const char *directory);
 */
 void xs_jump(int value);
 
-/*  salva o arquivo, mas permite ao usuÃ¡rio controlar
-    os estados salvos intermediÃ¡rios atravÃ©s da interaÃ§Ã£o com o terminal.
+/*  salva o arquivo, mas permite ao usuário controlar
+    os estados salvos intermediários através da interação com o terminal.
 */
 int x_step(const char *filename);
 
@@ -115,8 +115,8 @@ int x_step(const char *filename);
 /* a funcao plot pinta o pixel usando a cor */
 void x_plot(int x, int y);
 
-/* a funcao write escreve um texto text, na posiÃ§Ã£o px, py.
-   retorna o x da posiÃ§Ã£o apÃ³s o Ãºltimo caractere escrito.
+/* a funcao write escreve um texto text, na posição px, py.
+   retorna o x da posição após o último caractere escrito.
 */
 int x_write(int x, int y, const char * format, ...);
 
@@ -125,7 +125,7 @@ void x_clear(XColor color);
 
 /*
 ###############################################
-### FUNÃ‡Ã•ES SET: Cor, Fonte, Paleta de Cores ##
+### FUNÇÕES SET: Cor, Fonte, Paleta de Cores ##
 ###############################################
 */
 
@@ -143,7 +143,7 @@ void xs_font(const char* filename);
 
 /*
 ###############################################
-############## FUNÃ‡Ã•ES GET ####################
+############## FUNÇÕES GET ####################
 ###############################################
 */
 
@@ -158,7 +158,7 @@ XColor xg_color();
 XColor xg_pixel(int x, int y);
 
 /* retorna uma cor dado um char. 
-   os char default da paleta sÃ£o rgbmcybk
+   os char default da paleta são rgbmcybk
    outros podem ser definidos ou redefinidor com xs_palette
 */
 XColor xg_palette(char c);
@@ -175,7 +175,7 @@ extern "C" {
 #endif
 
 /* ############################################### */
-/* ############ FUNÃ‡Ã•ES DE DESENHO DE LINHAS ##### */
+/* ############ FUNÇÕES DE DESENHO DE LINHAS ##### */
 /* ############################################### */
 
 
@@ -200,13 +200,13 @@ void xd_bezier(int x0, int y0, int x1, int y1, int x2, int y2);
 
 
 /* ############################################### */
-/* ### FUNÃ‡Ã•ES DE DESENHO FORMAS PREENCHIDAS ##### */
+/* ### FUNÇÕES DE DESENHO FORMAS PREENCHIDAS ##### */
 /* ############################################### */
 
 /* desenha um arco dado o ponto de centro, raio, espessura */
 /* o angulo de inicio e o angulo de fim */
 /* o angulo de inicio deve ser sempre menor que o angulo de fim */
-/* o desenho Ã© feito no sentido anti horario */
+/* o desenho é feito no sentido anti horario */
 /* o angulo pode superar 360 */
 void xd_filled_arc(float centerx, float centery, int radius, int thickness, int degrees_begin, int degrees_end);
 
@@ -282,14 +282,14 @@ extern "C" {
 
 /*
 ###############################################
-############ FUNÃ‡Ã•ES MATEMATICAS ##############
+############ FUNÇÕES MATEMATICAS ##############
 ###############################################
 */
 
 /*
-Essas funÃ§Ãµes foram adicionadas para que a biblioteca
-xpaint nÃ£o dependesse de incluir a biblioteca math.h
-nos parametros de compilaÃ§Ã£o com o -lm 
+Essas funções foram adicionadas para que a biblioteca
+xpaint não dependesse de incluir a biblioteca math.h
+nos parametros de compilação com o -lm 
 */
 
 float xm_sqrt(const float m);
@@ -308,8 +308,8 @@ int   xm_rand(int min, int max);
 ###################################################
 #         INICIO DA IMPLEMENTACAO                 #  
 #                                                 #
-#   O cÃ³digo abaixo apenas serÃ¡ inserido se       #
-#   vocÃª incluir o #define XFULL antes de incluir #
+#   O código abaixo apenas será inserido se       #
+#   você incluir o #define XFULL antes de incluir #
 #   essa biblioteca.                              #
 ###################################################
 */
@@ -8393,7 +8393,7 @@ unsigned encode(const std::string& filename,
 #endif /* LODEPNG_COMPILE_PNG */
 } /* namespace lodepng */
 #endif /*LODEPNG_COMPILE_CPP*/
-/* inclusÃ£o David Sena */
+/* inclusão David Sena */
 #define STB_TRUETYPE_IMPLEMENTATION
 
 #define STBTT_RGB_MODE /* alteracao para escrever 3 cores */
@@ -16505,8 +16505,6 @@ void x_save(const char *filename){
 }
 
 void xs_log(const char *directory){
-    if(directory == NULL)
-        directory = "";
     strcpy(__x_log_directory, directory);
 }
 
@@ -16525,11 +16523,6 @@ void xs_jump(int value){
 }
 
 int x_step(const char *filename){
-    static int init = 1;
-    if(init == 1){
-        init = 0;
-        printf("press{enter/jump value/0 to skip}\n");
-    }
     static int rounds = 0; /* each save reset the round */
     static int state = 0; /* each save generate a new state */
     if(strcmp(__x_log_directory, "") != 0){
@@ -16540,7 +16533,7 @@ int x_step(const char *filename){
     state += 1;
     if((__x_step_jump != 0) && (rounds >= __x_step_jump)){
         x_save(filename);
-        printf("(state: %i, jump: %i): ", state, __x_step_jump);
+        printf("(state: %i, jump: %i) press{enter/jump value/0 to skip}:", state, __x_step_jump);
         fgets(line, sizeof(line), stdin);
         char * ptr = line;
         int value = (int) strtol(line, &ptr, 10);
@@ -17177,4 +17170,4 @@ float xm_fabs(float f){
 #endif
 
 #endif /* H_ONLY */
-#undef H_ONLY /* Para evitar a propagaÃ§Ã£o da Flag ela deve ser apagada */
+#undef H_ONLY /* Para evitar a propagação da Flag ela deve ser apagada */
