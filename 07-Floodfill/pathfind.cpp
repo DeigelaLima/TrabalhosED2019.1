@@ -48,7 +48,6 @@ void mostrar(vector<vector<int>>& mat_int, vector<string>& mat, queue<Pos> fila)
 }
 void floodfill(vector<vector<int>>& mat_int, vector<string>& mat, int l, int c, char cor_base, char cor_final, int lfinal, int cfinal){
     queue<Pos> fila;
-    queue<Pos> fila2;
     bool encontrou = false;
     int i = 1;
     fila.push(Pos(l, c));
@@ -63,19 +62,69 @@ void floodfill(vector<vector<int>>& mat_int, vector<string>& mat, int l, int c, 
                 fila.push(viz);
                 mostrar(mat_int, mat, fila);
             }
-            if(has_value(mat, viz.l, viz.c, cor_final) && viz.l == lfinal && viz.c == cfinal){
-	    	    encontrou = true;
-		    break;
-            }
-		
-       }
-
-	if(encontrou)
-        	break;
-    i++;
+        }
     }
-    
-    
+}
+void pathfind(vector<vector<int>> & mat_int, vector<string> & mat, int l, int c, char cor_base, char cor_final, int lfinal, int cfinal){
+    queue<Pos> fila;
+    queue<Pos> fila2;
+    vector<string> mat_estoque = mat;
+    bool encontrou = false;
+    int aux = 0;
+    fila.push(Pos(l,c));
+    mat[l][c] = cor_final;
+
+    while(!fila.empty()){
+        Pos ref = fila.front();
+        fila.pop();//pop: Remover proximo elemento
+        aux = mat_int[ref.l][ref.c] + 1;
+        for(auto viz : get_neibs(ref.l, ref.c)){
+            if(has_value(mat, viz.l, viz.c, cor_base)){
+                mat[viz.l][viz.c] = cor_final;
+                mat_int[viz.l][viz.c] = aux;
+                fila.push(viz);
+                mostrar(mat_int, mat, fila);
+            }
+            if(has_value(mat, viz.l, viz.c, cor_final) && (viz.l == lfinal) && (viz.c == cfinal)){
+                encontrou = true;
+                break;
+            }
+        }
+        if(encontrou)
+            break;
+    }
+    if(encontrou){
+        fila2.push(Pos(lfinal, cfinal));
+        bool terminou = false;
+
+        while(!terminou){
+            Pos ref = fila2.back();//Acessar ultimo elemento
+            int  aux = mat_int[ref.l][ref.c];
+            for(auto viz : get_neibs(ref.l, ref.c)){
+                if(has_value(mat, viz.l, viz.c, cor_final) && (mat_int[viz.l][viz.c] == 0)){
+                    fila2.push(Pos(viz.l, viz.c));//Insere um novo elemento
+                    terminou = true;
+                    break;
+                }
+                if(has_value(mat, viz.l, viz.c, cor_final) && (mat_int[viz.l][viz.c]) == aux - 1){
+                    fila2.push(Pos(viz.l, viz.c));//push: insere
+                    break;
+                }
+            }
+        }
+        mat = mat_estoque;
+
+        while(!fila2.empty()){
+            Pos ref = fila2.front();//Retorna a referencia ao proximo elemento da fila
+            mat[ref.l][ref.c] = cor_final;
+            fila2.pop();
+        }
+    }
+    if(!encontrou){
+        mat = mat_estoque;
+        printf("O caminho nao eh valido!");
+    }
+
 }
 int main(){
     int nl = 20, nc = 20;
@@ -92,14 +141,14 @@ int main(){
     x_save("mat");
     int linicio = 0, cinicio = 0;
     int lfim = 0, cfim = 0;
-    puts("Digite o ponto de inicio l e c");
+    puts("Digite o ponto de inicio l e c: ");
     scanf("%d %d", &linicio, &cinicio);
-    puts("Digite o ponto do fim l e c");
+    puts("Digite o ponto do fim l e c: ");
     scanf("%d %d", &lfim, &cfim);
     getchar();//remove \n after numbers
 
 //    pintar(mat, l, c, mat[l][c], 'b');
-    floodfill(mat_int, mat, linicio, cinicio, mat[linicio][cinicio], 'b', lfim, cfim);
+    pathfind(mat_int, mat, linicio, cinicio, mat[linicio][cinicio], 'b', lfim, cfim);
     xmat_draw(mat);
     x_save("mat");
     x_close();
