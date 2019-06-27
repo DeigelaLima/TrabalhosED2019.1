@@ -120,16 +120,15 @@
 ## 08 - Banco 
 
 * O que você fez<p>
-    * bla bla
-
+    * Fiz o código completo.
 * Com quem e como você fez<p>
-    * bla bla
+    * Inicialmente comecei sozinha, depois pedi ajuda para uma amiga da turma, Stefane. 
 * O que aprendeu e sabe fazer<p>
-    * bla bla
+    * Aprendi como funciona a fila. Entendi a lógica e sei fazer algumas funções.
 * O que tem dificuldade ainda<p>
-    * bla bla
+    * Dificuldade de utilizar o Iterador.
 * Quanto tempo levou para fazer uma atividade<p>
-    * bla bla
+    * Dois dias: Três horas no primeiro e duas horas no segundo dia.
 ## 09 - Editor
 * O que você fez<p>
     * bla bla
