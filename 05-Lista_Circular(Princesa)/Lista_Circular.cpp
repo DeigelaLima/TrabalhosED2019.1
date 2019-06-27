@@ -76,7 +76,7 @@ int main(){
     cin >> participantes >> escolhido;
 
     for(int i = 1; i < participantes; i++)
-        inserir_esquerda(lista_circular, i + 1);
+        inserir_esquerda(lista_circular, i + 1);//insere o valor de i a esquerda
     No * no_temporario = lista_circular;
     while(no_temporario->proximo->valor != escolhido + 1)
         no_temporario = no_temporario->proximo;
