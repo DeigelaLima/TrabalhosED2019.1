@@ -7,7 +7,7 @@ typedef struct Pos{
 	int l;
 	int c;
 }Pos;
-#define pegar_vizinhos(l, c) {{l, c - 1},{l - 1, c},{l, c + 1},{l + 1, c}}//Pega tudo que escreveu e substitui
+#define pegar_vizinhos(l,c) {{l,c-1},{l-1,c},{l,c+1},{l+1,c}}//Pega tudo que escreveu e substitui
 	
 void embaralhar_vizinhos(Pos vet[], int tamanho){
 	int i;
@@ -78,18 +78,17 @@ bool procurar_saida(int nl, int nc, char matriz[nl][nc], int l, int c, char matr
 		return true;               //podemos retornar TRUE.
 	}
 	//Iremos procurar o caminho atraves dos vizinhos.
-	if(procurar_saida(nl, nc, matriz, l, c - 1, matriz_visitados, Lsaida,Csaida) == true){
-		return true;
+	int vet[4][2] = {{l,c-1}, 0
+					 {l-1,c}, 1
+					 {l,c+1}, 2
+					 {l+1,c}  3
+					 }; //pegar_vizinhos(l,c);
+
+	for(int i = 0; i < 4; i++){
+		if(procurar_saida(nl, nc, matriz, vet[i][0], vet[i][1], matriz_visitados, Lsaida,Csaida))
+			return true;
 	}
-	if(procurar_saida(nl, nc, matriz, l - 1, c, matriz_visitados, Lsaida, Csaida) == true){
-		return true;
-	}
-	if(procurar_saida(nl, nc, matriz, l, c + 1,matriz_visitados, Lsaida, Csaida) == true){
-		return true;
-	}
-	if(procurar_saida(nl, nc, matriz, l + 1, c, matriz_visitados, Lsaida, Csaida) == true){
-		return true;
-	}
+
 	//Nao eh possivel chegar no objetivo entao retorna FALSE. Como nao existe caminho retira-se o PONTO.
 	matriz[l][c] = ' ';
 	return false;

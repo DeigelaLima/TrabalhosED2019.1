@@ -77,12 +77,14 @@ int main(){
     cout << "Digite a quantidade de participantes e o escolhido:\n " <<endl;
     cin >> participantes >> escolhido;
 
-    for(int i = 1; i < participantes; i++)
+    for(int i = 1; i < participantes; i++){
         inserir_Esquerda(lista, i + 1);//insere o valor de i a esquerda
+    }
     No * no_temporario = lista;
-    while(no_temporario->proximo->valor != escolhido + 1)
+    while(no_temporario->proximo->valor != escolhido + 1){
         no_temporario = no_temporario->proximo;
         mostrar_lista(lista, no_temporario);
+    }
     while(no_temporario->proximo != no_temporario){
         remover_Direita(no_temporario);
         no_temporario = no_temporario->proximo;

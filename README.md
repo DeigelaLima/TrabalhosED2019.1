@@ -108,7 +108,7 @@
     * Dois dias, no primeiro uma hora e meia, no segundo 30 minutos.  
 ## 07 - Floodfill
 * O que você fez<p>
-    * Fiz 50% do que foi proposto para trabalho.
+    * Fiz completo.
 * Com quem e como você fez<p>
     * Comecei fazendo as alterações no código sozinha, assistindo a video aula, onde no final da aula o senhor explica o códico do floodfill em C++. Achei um pouco complicado de entender algumas partes, então pedi ajuda para alguns colegas.
 * O que aprendeu e sabe fazer<p>
@@ -116,5 +116,5 @@
 * O que tem dificuldade ainda<p>
     * Dificuldade de entender a matriz como um vetor de string.
 * Quanto tempo levou para fazer uma atividade<p>
-    * Levei umas quatro horas e ainda não consegui finalizar.
+    * Levei umas quatro horas.
 
