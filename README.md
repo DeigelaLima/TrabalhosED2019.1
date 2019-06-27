@@ -117,4 +117,29 @@
     * Dificuldade de entender a matriz como um vetor de string.
 * Quanto tempo levou para fazer uma atividade<p>
     * Levei umas quatro horas.
+## 08 - Banco 
 
+* O que você fez<p>
+    * bla bla
+
+* Com quem e como você fez<p>
+    * bla bla
+* O que aprendeu e sabe fazer<p>
+    * bla bla
+* O que tem dificuldade ainda<p>
+    * bla bla
+* Quanto tempo levou para fazer uma atividade<p>
+    * bla bla
+## 09 - Editor
+* O que você fez<p>
+    * bla bla
+
+* Com quem e como você fez<p>
+    * bla bla
+* O que aprendeu e sabe fazer<p>
+    * bla bla
+* O que tem dificuldade ainda<p>
+    * bla bla
+* Quanto tempo levou para fazer uma atividade<p>
+    * bla bla
+## 10 - Questões
