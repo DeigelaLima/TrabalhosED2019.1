@@ -131,14 +131,13 @@
     * Dois dias: Três horas no primeiro e duas horas no segundo dia.
 ## 09 - Editor
 * O que você fez<p>
-    * bla bla
-
+    * Fiz código. Faltou  a função Up e Draw.
 * Com quem e como você fez<p>
-    * bla bla
+    * Comecei a fazer sozinha, depois pedi ajuda de dois colegas da turma.
 * O que aprendeu e sabe fazer<p>
-    * bla bla
+    * Entendi a lógica e sei fazer a maioria das funções.
 * O que tem dificuldade ainda<p>
-    * bla bla
+    * De utilizar o Iterador.
 * Quanto tempo levou para fazer uma atividade<p>
-    * bla bla
+    * Levei dois dias: No primeiro umas três horas no segundo dia duas horas.
 ## 10 - Questões
